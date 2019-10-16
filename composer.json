@@ -2,7 +2,7 @@
   "name": "dxx004/m2-instagram-feed-widget",
   "description": "Magento 2 module - Instagram feed widget",
   "require": {
-    "php": "~7.1.3|~7.2.0",
+    "php": "~7.0.13|~7.1.3|~7.2.0",
     "magento/framework": "^100|^101|^102"
   },
   "authors": [
