@@ -8,25 +8,40 @@
         <parameters>
             <parameter name="username" sort_order="10" visible="true" xsi:type="text">
                 <label translate="true">Instagram Username</label>
+                <description translate="true">Instagram username from where to retrieve the feed</description>
+            </parameter>
+            <parameter name="tag" sort_order="10" visible="true" xsi:type="text">
+                <label translate="true">Instagram Tag</label>
+                <description translate="true">Instagram tag from where to retrieve the feed</description>
             </parameter>
             <parameter name="display_profile" sort_order="20" visible="true" xsi:type="select"
                        source_model="Magento\Config\Model\Config\Source\Yesno">
                 <label translate="true">Display profile</label>
+                <description translate="true">Enables displaying the profile</description>
             </parameter>
             <parameter name="display_biography" sort_order="30" visible="true" xsi:type="select"
                        source_model="Magento\Config\Model\Config\Source\Yesno">
                 <label translate="true">Display biography</label>
+                <description translate="true">Enables displaying the biography. Only for users</description>
             </parameter>
             <parameter name="display_gallery" sort_order="40" visible="true" xsi:type="select"
                        source_model="Magento\Config\Model\Config\Source\Yesno">
                 <label translate="true">Display gallery</label>
+                <description translate="true">Enables displaying the gallery</description>
+            </parameter>
+            <parameter name="display_igtv" sort_order="40" visible="true" xsi:type="select"
+                       source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Display IGTV</label>
+                <description translate="true">Enables displaying the IGTV feed if available. Only for users</description>
             </parameter>
             <parameter name="styling" sort_order="50" visible="true" xsi:type="select"
                        source_model="Magento\Config\Model\Config\Source\Yesno">
                 <label translate="true">Styling</label>
+                <description translate="true">Enables default styling</description>
             </parameter>
             <parameter name="max_items" sort_order="60" visible="true" xsi:type="text">
                 <label translate="true">Max Items</label>
+                <description translate="true">Num of items to display in gallery.</description>
             </parameter>
             <parameter name="items_per_row" sort_order="70" visible="true" xsi:type="text">
                 <label translate="true">Items per row</label>
