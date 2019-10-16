@@ -22,10 +22,24 @@ define([
          * @private
          */
         _create: function () {
-            const config = this.options;
-            config.container = this.element;
+            const config = {
+                display_profile: this.options.display_profile,
+                display_biography: this.options.display_biography,
+                display_gallery: this.options.display_gallery,
+                styling: this.options.styling,
+                display_igtv: this.options.display_igtv,
+                items: this.options.items,
+                items_per_row: this.options.items_per_row,
+                container: this.element
+            };
 
-            if ($(this.element).length && config.username) {
+            if (this.options.tag.length) {
+                config.tag = this.options.tag;
+            } else {
+                config.username = this.options.username;
+            }
+
+            if ($(this.element).length && (config.username || config.tag)) {
                 $.instagramFeed(config);
             }
 
