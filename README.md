@@ -11,3 +11,6 @@ composer require dxx004/m2-instagram-feed-widget
 php bin/magento setup:upgrade
 php bin/magento setup:static-content:deploy
 ```
+
+## Usage
+Instagram feed module adds new widget type, so can be found when editing CMS page or CMS block -> Insert Widget 
