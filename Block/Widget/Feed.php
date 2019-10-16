@@ -45,14 +45,13 @@ class Feed extends Template implements BlockInterface
     {
         $data = $this->getData();
         return $this->json->serialize([
-            'username' => $data['username'] ?? '',
-            'tag' => $data['tag'] ?? '',
+            !empty($data['tag']) ? 'tag':'username' => $data['tag'] ?? $data['username'] ?? '',
             'display_profile' => (bool)$data['display_profile'] ?? true,
             'display_biography' => (bool)$data['display_biography'] ?? true,
             'display_gallery' => (bool)$data['display_gallery'] ?? true,
             'styling' => (bool)$data['styling'] ?? true,
             'display_igtv' => (bool)$data['display_igtv'] ?? true,
-            'max_items' => $data['max_items'] ?? 6,
+            'items' => $data['max_items'] ?? 6,
             'items_per_row' => $data['items_per_row'] ?? 6,
         ]);
     }

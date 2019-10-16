@@ -13,7 +13,7 @@ define([
             display_gallery: true,
             styling: true,
             display_igtv: false,
-            max_items: 6,
+            items: 6,
             items_per_row: 6
         },
 
@@ -23,22 +23,10 @@ define([
          */
         _create: function () {
             const config = this.options;
+            config.container = this.element;
 
             if ($(this.element).length && config.username) {
-                $.instagramFeed({
-                    'username': config.username,
-                    'tag': config.tag,
-                    'container': this.element,
-                    'display_profile': config.display_profile,
-                    'display_biography': config.display_biography,
-                    'display_gallery': config.display_gallery,
-                    'callback': null,
-                    'styling': config.styling,
-                    'display_igtv': config.display_igtv,
-                    'items': config.max_items,
-                    'items_per_row': config.items_per_row,
-                    'margin': 1
-                });
+                $.instagramFeed(config);
             }
 
         }
