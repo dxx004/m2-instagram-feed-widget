@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget class="RVSolutions\InstagramFeed\Block\Widget\Feed" id="rvs_instragram_feed">
+        <label translate="true">Instagram Feed</label>
+        <description translate="true">Show Instagram Feed anywhere on page</description>
+        <parameters>
+            <parameter name="username" sort_order="10" visible="true" xsi:type="text">
+                <label translate="true">Instagram Username</label>
+            </parameter>
+            <parameter name="display_profile" sort_order="20" visible="true" xsi:type="select"
+                       source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Display profile</label>
+            </parameter>
+            <parameter name="display_biography" sort_order="30" visible="true" xsi:type="select"
+                       source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Display biography</label>
+            </parameter>
+            <parameter name="display_gallery" sort_order="40" visible="true" xsi:type="select"
+                       source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Display gallery</label>
+            </parameter>
+            <parameter name="styling" sort_order="50" visible="true" xsi:type="select"
+                       source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Styling</label>
+            </parameter>
+            <parameter name="max_items" sort_order="60" visible="true" xsi:type="text">
+                <label translate="true">Max Items</label>
+            </parameter>
+            <parameter name="items_per_row" sort_order="70" visible="true" xsi:type="text">
+                <label translate="true">Items per row</label>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

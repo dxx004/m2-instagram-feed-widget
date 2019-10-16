@@ -1,0 +1,13 @@
+<?php
+/** @var \RVSolutions\InstagramFeed\Block\Widget\Feed $block */
+
+$elementId = $block->getElementId();
+?>
+<div class="rvs-instragram-feed" id="<?= $elementId ?>"></div>
+<script type="text/x-magento-init">
+        {
+            "#<?= $elementId?>": {
+                "RVSolutions_InstagramFeed/js/instagram-feed": <?= $block->getJsonData() ?>
+            }
+        }
+</script>

@@ -1,0 +1,26 @@
+{
+  "name": "dxx004/m2-instagram-feed-widget",
+  "description": "Magento 2 module - Instagram feed widget",
+  "require": {
+    "magento/framework": "^100|^101"
+  },
+  "authors": [
+    {
+      "name": "mageguru.net",
+      "email": "hellp@mageguru.com",
+      "homepage": "https://www.mageguru.net",
+      "role": "Technical Support"
+    }
+  ],
+  "type": "magento2-module",
+  "version": "0.1.0",
+  "license": "proprietary",
+  "autoload": {
+    "psr-4": {
+      "RVSolutions\\InstagramFeed\\": ""
+    },
+    "files": [
+      "registration.php"
+    ]
+  }
+}
